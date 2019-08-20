@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import Button from './components/Button'
 
 function App() {
+  const [userMove, setUserMove] = useState('not chosen yet')
+  const handleMove = event => setUserMove(event.target.id)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <Button onClick={handleMove} name='Rock' />
+        <Button onClick={handleMove} name='Paper' />
+        <Button onClick={handleMove} name='Scissors' />
+        <p>You clicked {userMove}</p>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
