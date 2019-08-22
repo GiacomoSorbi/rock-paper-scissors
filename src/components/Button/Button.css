@@ -1,0 +1,9 @@
+button {
+  width: 20vmin;
+  height: 20vmin;
+  border: 1vmin green solid;
+  border-radius: 1vmin;
+  outline: none;
+  font-size: 2vmin;
+  font-weight: bold;
+}

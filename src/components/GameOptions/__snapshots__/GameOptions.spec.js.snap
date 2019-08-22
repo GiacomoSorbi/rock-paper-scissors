@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameOptions should render 1`] = `
+<DocumentFragment>
+  <div>
+    <button
+      id="pippi"
+    >
+      pippi
+    </button>
+    <button
+      id="cat"
+    >
+      cat
+    </button>
+    <button
+      id="pappa"
+    >
+      pappa
+    </button>
+  </div>
+</DocumentFragment>
+`;
